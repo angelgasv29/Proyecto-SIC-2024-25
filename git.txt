@@ -1,0 +1,52 @@
+__________________________________1.COMANDOS DE CONFIGURACIÓN_____________________________
+
+git --version    #para ver la versió de git que estamos corriendo
+
+git --global user.name "Arismedi pepe"             # para colocar nuestro nombre en entorno
+
+git --global user.email "pepelaja@gmail.com"    #correo que se va a asociar para guardar el control de versiones.
+
+# para configurar el editor de texto por defecto: 
+git --global code.editor "code --wait"     ('code --wait')
+
+-cuando estamos editando estas variables globales, las estamos almacenando en el archivo 
+gitconfig
+
+git config --global core.autocrlf true    #tiene que ver con el caracter especial salto de linea (Cuando se suba la información) en windows se configura con true y en mac con input (carriage return)
+
+config -h    #para ver la ayuda de git (listando el manual de uso).
+ 
+
+
+
+______________2.COMANDOS BÁSICOS PARA UBICARNOS EN LA TERMINAL BASH DE GIT________________
+
+
+pwd  #(propio de la consola, nos muestra la dirección o ruta donde nos ubicamos)
+
+ls   #listar todas las carpetas y archivos de la ruta donde nos ubicamos.
+
+ls -a   #para mostrarme todos los archivos visibles e invisibles de donde nos encontramos, también nos muestra una información contenida donde estamos gestionando nuestro proyecto.
+
+vim (editor de texto)
+
+cd +nombre de la carpeta   #para ingresar a una carpeta en particular, con la tecla tabulador podemos autocompletar los nombres de las diferentes carpetas disponibles.
+
+cd..    #para retrocer a la carpeta anterior.
+
+cd../.. #para retroceder 2 carpetas.
+
+mkdir +nombre de la carpeta  #para crear una carpeta nueva.
+
+
+_____________________________3.FUNCIONES PROPIAS DE GIT______________________________
+
+git init  #para crear o inicializar un repositorio de git.
+cuando este comando se ejecuta por primera vez, especifica que estamos trabajando por edefecto desde la rama master y al final de todo, dice "Initialized empty y la ubicación" donde se ha inicializado el repositorio de forma local.
+
+git config --global init.defaulBranch <name>   #para cambiar la base o rama por defecto desde donde se está trabajando.
+
+git branch -m <name>  #para generar una nueva rama
+
+
+
